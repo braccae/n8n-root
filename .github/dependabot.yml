@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     groups:
       github-actions:
         patterns: ["*"]
@@ -12,8 +12,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    filters:
-      tags:
-        - dependency-name: "docker.io/n8nio/n8n"
-          patterns:
-            - "^stable$"
+    # filters:
+    #   tags:
+    #     - dependency-name: "docker.io/n8nio/n8n"
+    #       patterns:
+    #         - "^stable$"
