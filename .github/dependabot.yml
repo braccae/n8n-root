@@ -12,8 +12,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    # filters:
-    #   tags:
-    #     - dependency-name: "docker.io/n8nio/n8n"
-    #       patterns:
-    #         - "^stable$"
+    groups:
+      docker:
+        patterns: ["*"]
+    open-pull-requests-limit: 10
+    pull-request-branch-name:
+      separator: "-"
